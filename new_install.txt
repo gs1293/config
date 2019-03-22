@@ -1,0 +1,34 @@
+https://github.com/karlstav/cava
+install all dependencies before building
+
+https://github.com/dpayne/cli-visualizer
+
+https://github.com/sharkdp/bat
+
+chsh -s /bin/zsh
+logout and login back
+
+git clone dotfiles
+git clone config
+
+copy and place all dotfiles at respective directories
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+open .vimrc and :PluginInstall
+vim -c "PluginInstall" -c "q" -c "q" .vimrc
+
+install typora for markdown editor from website
+install google-chrome-stable from website or software repo
+
+atom text editor install from website
+vscode text editor install from website
+sublime text editor follow guide from website
+
+install persepolis from website
+install xdman from website
+install gpg from website
+install brave using instructions on website
+
+ranger --copy-config=all
+setup ranger config file : .config/ranger/rifle.conf
+
+https://gitlab.com/wavexx/screenkey
