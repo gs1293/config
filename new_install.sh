@@ -253,3 +253,11 @@ then
 else
     echo "rofi is already installed"
 fi
+
+if [ ! -x "$(command -v cmus)" ];
+then
+    echo "Installing cmus"
+    sudo apt-get install cmus -y
+else
+    echo "cmus is already installed"
+fi

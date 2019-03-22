@@ -2,7 +2,6 @@ https://github.com/karlstav/cava
 install all dependencies before building
 
 https://github.com/dpayne/cli-visualizer
-
 https://github.com/sharkdp/bat
 
 chsh -s /bin/zsh
