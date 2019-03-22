@@ -261,3 +261,20 @@ then
 else
     echo "cmus is already installed"
 fi
+
+if [ ! -x "$(command -v tmux)" ];
+then
+    echo "Installing tmux"
+    sudo apt-get install tmux -y
+else
+    echo "tmux is already installed"
+fi
+
+if [ ! -x "$(command -v fzf)" ];
+then
+    echo "Installing fzf"
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+else
+    echo "fzf is already installed"
+fi
