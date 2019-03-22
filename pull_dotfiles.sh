@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Switching to home directory"
+echo "Switching to Home directory"
 
 cd
 
