@@ -245,3 +245,11 @@ then
 else
     echo "grub-customizer is already installed"
 fi
+
+if [ ! -x "$(command -v rofi)" ];
+then
+    echo "Installing rofi"
+    sudo apt-get install rofi -y
+else
+    echo "rofi is already installed"
+fi
