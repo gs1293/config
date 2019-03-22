@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Switching to home directory"
+
 cd
 
 if [ -d "$HOME/dotfiles" ];
