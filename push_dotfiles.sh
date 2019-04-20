@@ -4,11 +4,8 @@ echo "Switching to HOME directory"
 
 cd
 
-if [ ! -d "$HOME/dotfiles" ];
-then
-    echo "Creating dotfiles directory"
-    mkdir -p ~/dotfiles
-fi
+mkdir -p ~/dotfiles
+mkdir -p ~/dotfiles/.config/ranger
 
 echo "Copying dotfiles to local repo"
 cp ~/.vimrc ~/dotfiles/.
@@ -16,7 +13,11 @@ cp ~/.inputrc ~/dotfiles/.
 cp ~/.zshrc ~/dotfiles/.
 cp ~/.gitconfig ~/dotfiles/.
 cp ~/.bash_aliases ~/dotfiles/.
-cp -rf ~/.config/ranger/ ~/dotfiles/.
+cp ~/.config/ranger/rc.conf ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/commands.py ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/commands_full.py ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
 
 echo "Entering dotfiles directory"
 cd ~/dotfiles
