@@ -16,6 +16,7 @@ cp ~/.inputrc ~/dotfiles/.
 cp ~/.zshrc ~/dotfiles/.
 cp ~/.gitconfig ~/dotfiles/.
 cp ~/.bash_aliases ~/dotfiles/.
+cp -rf ~/.config/ranger/ ~/dotfiles/.
 
 echo "Entering dotfiles directory"
 cd ~/dotfiles

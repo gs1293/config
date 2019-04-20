@@ -17,10 +17,6 @@ vim -c "PluginInstall" -c "q" -c "q" .vimrc
 install typora for markdown editor from website
 install google-chrome-stable from website or software repo
 
-atom text editor install from website
-vscode text editor install from website
-sublime text editor follow guide from website
-
 install persepolis from website
 install xdman from website
 install gpg from website
@@ -30,3 +26,35 @@ ranger --copy-config=all
 setup ranger config file : .config/ranger/rifle.conf
 
 https://gitlab.com/wavexx/screenkey
+
+Installing uget-integrator with browser
+https://github.com/ugetdm/uget-integrator
+
+install sonarr
+
+sudo apt-get install texlive-latex-extra
+sudo apt-get install texlive-extra-utils
+
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+
+sudo apt-get install net-tools
+sudo apt-get install python3-pip
+
+sudo -H pip3 install asciinema
+
+sudo apt-get remove iio-sensor-proxy
+gsettings set org.gnome.settings-daemon.plugins.orientation active false
+sudo apt-get install cmatrix
+
+sudo apt-get install w3m
+sudo apt-get install w3m-img
+sudo apt-get install ffmpegthumbnailer
+sudo apt-get install npm
+sudo npm install webtorrent-cli -g
+sudo npm install -g tldr
+sudo -H pip3 install pywal
+sudo apt-get install gnome-tweak-tool
+sudo apt-get install screen
+sudo apt-get install ncdu
+sudo apt-get install shellcheck

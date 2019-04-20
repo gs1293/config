@@ -13,6 +13,8 @@ echo "Cleaning system"
 sudo apt-get autoremove -y > /dev/null
 sudo apt-get autoclean -y > /dev/null
 
+echo "Installing packages from Ubuntu Repositories"
+
 if [ ! -x "$(command -v vlc)" ];
 then
     echo "Installing VLC Media Player"
@@ -277,4 +279,82 @@ then
     ~/.fzf/install
 else
     echo "fzf is already installed"
+fi
+
+if [ ! -x "$(command -v gimp)" ];
+then
+    echo "Installing gimp"
+    sudo apt-get install gimp -y
+else
+    echo "gimp is already installed"
+fi
+
+
+if [ ! -x "$(command -v neofetch)" ];
+then
+    echo "Installing gimp"
+    sudo apt-get install neofetch -y
+else
+    echo "neofetch is already installed"
+fi
+
+if [ ! -x "$(command -v xattr)" ];
+then
+    echo "Installing xattr"
+    sudo apt-get install xattr -y
+else
+    echo "xattr is already installed"
+fi
+
+if [ ! -x "$(command -v i3)" ];
+then
+    echo "Installing i3"
+    sudo apt-get install i3 -y
+else
+    echo "i3 is already installed"
+fi
+
+if [ ! -x "$(command -v snap)" ];
+then
+    echo "Installing snap"
+    sudo apt-get install snapd -y
+else
+    echo "snapd is already installed"
+fi
+
+echo "Installing packages from the snap store"
+
+echo "Updating snap packages"
+sudo snap refresh
+
+if [ ! -x "$(command -v code)" ];
+then
+    echo "Installing code"
+    sudo snap install code --classic
+else
+    echo "code is already installed"
+fi
+
+if [ ! -x "$(command -v subl)" ];
+then
+    echo "Installing subl"
+    sudo snap install sublime-text --classic
+else
+    echo "subl is already installed"
+fi
+
+if [ ! -x "$(command -v atom)" ];
+then
+    echo "Installing atom"
+    sudo snap install atom --classic
+else
+    echo "atom is already installed"
+fi
+
+if [ ! -x "$(command -v gitkraken)" ];
+then
+    echo "Installing gitkraken"
+    sudo snap install gitkraken
+else
+    echo "gitkraken is already installed"
 fi
