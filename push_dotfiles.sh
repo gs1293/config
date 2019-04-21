@@ -20,8 +20,6 @@ cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands_full.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
-cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
-cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 
