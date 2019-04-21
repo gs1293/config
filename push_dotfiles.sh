@@ -6,6 +6,8 @@ cd
 
 mkdir -p ~/dotfiles
 mkdir -p ~/dotfiles/.config/ranger
+mkdir -p ~/dotfiles/.vim/myfunctions
+mkdir -p ~/dotfiles/.vim/mysnippets
 
 echo "Copying dotfiles to local repo"
 cp ~/.vimrc ~/dotfiles/.
@@ -18,6 +20,10 @@ cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands_full.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
+cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
+cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 
 echo "Entering dotfiles directory"
 cd ~/dotfiles
