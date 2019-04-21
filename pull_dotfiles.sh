@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir ~/.config/ranger/
-mkdir ~/.vim/myfunctions/
-mkdir ~/.vim/mysnippets/
+mkdir -p ~/.config/ranger/
+mkdir -p ~/.vim/myfunctions/
+mkdir -p ~/.vim/mysnippets/
 
 echo "Switching to Home directory"
 
