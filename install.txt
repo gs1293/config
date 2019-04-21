@@ -54,3 +54,5 @@ https://gitlab.com/wavexx/screenkey
 
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
+
+pull_dotfiles : git pull check if any update, only then copy

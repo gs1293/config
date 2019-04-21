@@ -1,5 +1,9 @@
 #!/bin/bash
 
+mkdir ~/.config/ranger/
+mkdir ~/.vim/myfunctions/
+mkdir ~/.vim/mysnippets/
+
 echo "Switching to Home directory"
 
 cd
@@ -7,25 +11,36 @@ cd
 if [ -d "$HOME/dotfiles" ];
 then
     cd dotfiles
-    git pull
+    # Check return value to see if there are incoming updates.
+    if ! git diff --quiet remotes/origin/HEAD;
+    then
+        # add a prompt which says local repo does not match the remote repo
+        # please give ans whether want to pull or not
+        echo "Local repository does not match the remote repository"
+        read -p "Do you want to pull remote repository? " -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]
+        then
+            echo "Pulling remote repository"
+            git pull
+            echo "Copying dotfiles to home directory"
+            cp ~/dotfiles/.vimrc ~/.
+            cp ~/dotfiles/.inputrc ~/.
+            cp ~/dotfiles/.zshrc ~/.
+            cp ~/dotfiles/.gitconfig ~/.
+            cp ~/dotfiles/.bash_aliases ~/.
+            cp ~/dotfiles/.config/ranger/* ~/.config/ranger/.
+            cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
+            cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
+        fi
+    else
+        echo "Local repository already up to date with the remote repository"
+    fi
     cd
 else
-    echo "Cloning dotfiles repository from github"
+    echo "No old dotfiles directory exists, so"
+    echo "cloning dotfiles repository from github"
     git clone https://github.com/gs1293/dotfiles.git
 fi
-
-mkdir ~/.config/ranger/
-mkdir ~/.vim/myfunctions/
-mkdir ~/.vim/mysnippets/
-
-echo "Copying dotfiles to home directory"
-cp ~/dotfiles/.vimrc ~/.
-cp ~/dotfiles/.inputrc ~/.
-cp ~/dotfiles/.zshrc ~/.
-cp ~/dotfiles/.gitconfig ~/.
-cp ~/dotfiles/.bash_aliases ~/.
-cp ~/dotfiles/.config/ranger/* ~/.config/ranger/.
-cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
-cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
 
 echo "Done"
