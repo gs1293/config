@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/.config/ranger/
+mkdir -p ~/.config/i3/
 mkdir -p ~/.vim/myfunctions/
 mkdir -p ~/.vim/mysnippets/
 
@@ -30,6 +31,7 @@ then
             cp ~/dotfiles/.gitconfig ~/.
             cp ~/dotfiles/.bash_aliases ~/.
             cp ~/dotfiles/.config/ranger/* ~/.config/ranger/.
+            cp ~/dotfiles/.config/i3/config ~/.config/i3/.
             cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
             cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
         fi

@@ -54,3 +54,6 @@ https://gitlab.com/wavexx/screenkey
 
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
+
+https://github.com/acrisci/playerctl/releases
+sudo dpkg -i <playerctl_release>
