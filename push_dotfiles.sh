@@ -7,6 +7,7 @@ cd
 mkdir -p ~/dotfiles
 mkdir -p ~/dotfiles/.config/ranger
 mkdir -p ~/dotfiles/.config/i3
+mkdir -p ~/dotfiles/.config/i3blocks
 mkdir -p ~/dotfiles/.vim/myfunctions
 mkdir -p ~/dotfiles/.vim/mysnippets
 
@@ -21,7 +22,11 @@ cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands_full.py ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/scope.sh ~/dotfiles/.config/ranger/.
+cp ~/.config/ranger/bookmarks ~/dotfiles/.config/ranger/.
 cp ~/.config/i3/config ~/dotfiles/.config/i3/.
+cp ~/.config/i3/rofi ~/dotfiles/.config/i3/.
+cp ~/.config/i3/compton.conf ~/dotfiles/.config/i3/.
+cp ~/.config/i3blocks/config ~/dotfiles/.config/i3blocks/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 

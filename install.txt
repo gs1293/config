@@ -57,3 +57,8 @@ https://github.com/ugetdm/uget-integrator
 
 https://github.com/acrisci/playerctl/releases
 sudo dpkg -i <playerctl_release>
+
+sudo apt-get install blueman
+sudo apt-get install i3blocks
+sudo apt-get install compton
+sudo apt-get install mplayer
