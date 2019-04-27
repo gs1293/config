@@ -62,3 +62,6 @@ sudo apt-get install blueman
 sudo apt-get install i3blocks
 sudo apt-get install compton
 sudo apt-get install mplayer
+sudo apt-get install xbacklight
+sudo apt-get install pavucontrol
+sudo apt-get install i3lock-fancy
