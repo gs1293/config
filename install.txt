@@ -57,6 +57,7 @@ https://github.com/ugetdm/uget-integrator
 
 https://github.com/acrisci/playerctl/releases
 sudo dpkg -i <playerctl_release>
+sudo apt-get install playerctl
 
 sudo apt-get install blueman
 sudo apt-get install i3blocks
@@ -65,3 +66,37 @@ sudo apt-get install mplayer
 sudo apt-get install xbacklight
 sudo apt-get install pavucontrol
 sudo apt-get install i3lock-fancy
+
+i3-gaps installations
+install dependencies
+https://github.com/Airblader/i3/wiki/Building-from-source
+for config
+https://github.com/Airblader/i3
+
+upgrade all pip packages
+
+sudo apt-get install verilator
+sudo apt-get install iverilog
+
+https://github.com/jaagr/polybar/wiki/Compiling
+
+sudo apt-get install lolcat
+sudo apt-get install figlet
+sudo apt-get install toilet
+toilet -t -w 120 -f pagga abcdefghijklmnopqrstuvwxyz | lolcat
+
+sudo apt-get install tty-clock
+
+sudo snap install gotop-cjbassi
+snap connect gotop-cjbassi:hardware-observe
+snap connect gotop-cjbassi:mount-observe
+snap connect gotop-cjbassi:system-observe
+
+https://github.com/pipeseroni/pipes.sh
+
+sudo apt-get install meld
+sudo apt-get install thunar
+sudo apt-get install konsole
+
+sudo snap install cool-retro-term --classic
+install dependencies from github
