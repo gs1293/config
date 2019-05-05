@@ -8,6 +8,7 @@ mkdir -p ~/dotfiles
 mkdir -p ~/dotfiles/.config/ranger
 mkdir -p ~/dotfiles/.config/i3
 mkdir -p ~/dotfiles/.config/i3blocks
+mkdir -p ~/dotfiles/.config/polybar
 mkdir -p ~/dotfiles/.vim/myfunctions
 mkdir -p ~/dotfiles/.vim/mysnippets
 
@@ -27,6 +28,8 @@ cp ~/.config/i3/config ~/dotfiles/.config/i3/.
 cp ~/.config/i3/rofi ~/dotfiles/.config/i3/.
 cp ~/.config/i3/compton.conf ~/dotfiles/.config/i3/.
 cp ~/.config/i3blocks/config ~/dotfiles/.config/i3blocks/.
+cp ~/.config/polybar/config ~/dotfiles/.config/polybar/.
+cp ~/.config/polybar/launch.sh ~/dotfiles/.config/polybar/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 
