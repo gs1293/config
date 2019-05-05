@@ -9,6 +9,7 @@ mkdir -p ~/dotfiles/.config/ranger
 mkdir -p ~/dotfiles/.config/i3
 mkdir -p ~/dotfiles/.config/i3blocks
 mkdir -p ~/dotfiles/.config/polybar
+mkdir -p ~/dotfiles/.config/youtube-dl
 mkdir -p ~/dotfiles/.vim/myfunctions
 mkdir -p ~/dotfiles/.vim/mysnippets
 
@@ -30,6 +31,7 @@ cp ~/.config/i3/compton.conf ~/dotfiles/.config/i3/.
 cp ~/.config/i3blocks/config ~/dotfiles/.config/i3blocks/.
 cp ~/.config/polybar/config ~/dotfiles/.config/polybar/.
 cp ~/.config/polybar/launch.sh ~/dotfiles/.config/polybar/.
+cp ~/.config/youtube-dl/config ~/dotfiles/.config/youtube-dl/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 
