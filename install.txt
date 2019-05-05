@@ -100,3 +100,19 @@ sudo apt-get install konsole
 
 sudo snap install cool-retro-term --classic
 install dependencies from github
+
+
+# Download xdman, extract and install
+http://xdman.sourceforge.net/#downloads
+# install java
+sudo apt-get install openjdk-11-jre
+
+sudo apt-get install mps-youtube
+
+pip3 install --user mps-youtube
+pip3 install --user youtube-dl
+# pip3 install --user dbus-python pygobject
+
+sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
+
+sudo apt-get install cowsay
