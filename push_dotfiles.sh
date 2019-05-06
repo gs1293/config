@@ -28,6 +28,7 @@ cp ~/.config/ranger/bookmarks ~/dotfiles/.config/ranger/.
 cp ~/.config/i3/config ~/dotfiles/.config/i3/.
 cp ~/.config/i3/rofi ~/dotfiles/.config/i3/.
 cp ~/.config/i3/compton.conf ~/dotfiles/.config/i3/.
+cp ~/.config/i3/programs.sh ~/dotfiles/.config/i3/.
 cp ~/.config/i3blocks/config ~/dotfiles/.config/i3blocks/.
 cp ~/.config/polybar/config ~/dotfiles/.config/polybar/.
 cp ~/.config/polybar/launch.sh ~/dotfiles/.config/polybar/.
