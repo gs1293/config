@@ -358,3 +358,14 @@ then
 else
     echo "gitkraken is already installed"
 fi
+
+if [ ! -x "$(command -v gotop-cjbassi)" ];
+then
+    echo "Installing gotop-cjbassi"
+    sudo snap install gotop-cjbassi
+    snap connect gotop-cjbassi:hardware-observe
+    snap connect gotop-cjbassi:mount-observe
+    snap connect gotop-cjbassi:system-observe
+else
+    echo "gotop-cjbassi is already installed"
+fi

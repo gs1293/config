@@ -1,48 +1,61 @@
 chsh -s /bin/zsh
 logout and login back
 
-git clone dotfiles
-git clone config
-
-copy and place all dotfiles at respective directories
-open .vimrc and :PluginInstall
-vim -c "PluginInstall" -c "q" -c "q" .vimrc
-copy ranger config files
-
 install google-chrome-stable from website or software repo
-
 install persepolis from website
-install xdman from website
 install gpg from website
 install brave using instructions on website
 install sonarr
 
 sudo apt-get install texlive-latex-extra
 sudo apt-get install texlive-extra-utils
-
 sudo apt-get install openssh-client
 sudo apt-get install openssh-server
-
 sudo apt-get install net-tools
 sudo apt-get install python3-pip
-
-sudo -H pip3 install asciinema
-
-sudo apt-get remove iio-sensor-proxy
-gsettings set org.gnome.settings-daemon.plugins.orientation active false
 sudo apt-get install cmatrix
-
 sudo apt-get install w3m
 sudo apt-get install w3m-img
 sudo apt-get install ffmpegthumbnailer
 sudo apt-get install npm
-sudo npm install webtorrent-cli -g
-sudo npm install -g tldr
-sudo -H pip3 install pywal
 sudo apt-get install gnome-tweak-tool
 sudo apt-get install screen
 sudo apt-get install ncdu
 sudo apt-get install shellcheck
+sudo apt-get install blueman
+sudo apt-get install i3blocks
+sudo apt-get install compton
+sudo apt-get install mplayer
+sudo apt-get install xbacklight
+sudo apt-get install pavucontrol
+sudo apt-get install i3lock-fancy
+sudo apt-get install verilator
+sudo apt-get install iverilog
+sudo apt-get install lolcat
+sudo apt-get install figlet
+sudo apt-get install toilet
+sudo apt-get install tty-clock
+sudo apt-get install meld
+sudo apt-get install thunar
+sudo apt-get install konsole
+sudo apt-get install mps-youtube
+sudo apt-get install cowsay
+sudo apt-get install lxappearance
+sudo apt-get install lynx
+sudo apt-get install surfraw
+sudo apt-get install rxvt-unicode
+sudo apt-get install playerctl
+
+sudo apt-get remove iio-sensor-proxy
+gsettings set org.gnome.settings-daemon.plugins.orientation active false
+
+sudo -H pip3 install asciinema
+sudo -H pip3 install pywal
+sudo -H pip3 install mps-youtube
+sudo -H pip3 install youtube-dl
+
+sudo npm install webtorrent-cli -g
+sudo npm install -g tldr
 
 https://github.com/karlstav/cava
 install all dependencies before building
@@ -55,18 +68,6 @@ https://gitlab.com/wavexx/screenkey
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
 
-https://github.com/acrisci/playerctl/releases
-sudo dpkg -i <playerctl_release>
-sudo apt-get install playerctl
-
-sudo apt-get install blueman
-sudo apt-get install i3blocks
-sudo apt-get install compton
-sudo apt-get install mplayer
-sudo apt-get install xbacklight
-sudo apt-get install pavucontrol
-sudo apt-get install i3lock-fancy
-
 i3-gaps installations
 install dependencies
 https://github.com/Airblader/i3/wiki/Building-from-source
@@ -75,44 +76,18 @@ https://github.com/Airblader/i3
 
 upgrade all pip packages
 
-sudo apt-get install verilator
-sudo apt-get install iverilog
-
 https://github.com/jaagr/polybar/wiki/Compiling
 
-sudo apt-get install lolcat
-sudo apt-get install figlet
-sudo apt-get install toilet
 toilet -t -w 120 -f pagga abcdefghijklmnopqrstuvwxyz | lolcat
-
-sudo apt-get install tty-clock
-
-sudo snap install gotop-cjbassi
-snap connect gotop-cjbassi:hardware-observe
-snap connect gotop-cjbassi:mount-observe
-snap connect gotop-cjbassi:system-observe
 
 https://github.com/pipeseroni/pipes.sh
 
-sudo apt-get install meld
-sudo apt-get install thunar
-sudo apt-get install konsole
-
 sudo snap install cool-retro-term --classic
 install dependencies from github
-
 
 # Download xdman, extract and install
 http://xdman.sourceforge.net/#downloads
 # install java
 sudo apt-get install openjdk-11-jre
 
-sudo apt-get install mps-youtube
-
-pip3 install --user mps-youtube
-pip3 install --user youtube-dl
-# pip3 install --user dbus-python pygobject
-
 sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
-
-sudo apt-get install cowsay
