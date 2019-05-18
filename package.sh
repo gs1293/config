@@ -88,6 +88,9 @@ apt_package_list="               \
     libimage-exiftool-perl       \
     odt2txt                      \
     openjdk-11-jre               \
+    chrome-gnome-shell           \
+    nodejs                       \
+    npm                          \
     "
 #}}}
 
@@ -104,6 +107,28 @@ snap_classic_package_list=" \
 snap_strict_package_list=" \
     gitkraken              \
     gotop-cjbassi          \
+    "
+#}}}
+
+#{{{ PIP PACKAGE LIST
+pip_package_list=" \
+    ranger-fm      \
+    "
+#}}}
+
+#{{{ PIP3 PACKAGE LIST
+pip3_package_list=" \
+    asciinema       \
+    pywal           \
+    mps-youtube     \
+    youtube-dl      \
+    "
+#}}}
+
+#{{{ NPM PACKAGE LIST
+npm_package_list=" \
+    webtorrent-cli \
+    tldr           \
     "
 #}}}
 
@@ -176,5 +201,54 @@ do
 done
 #}}}
 
+################################################################################
+
+#{{{
+echo "Installing pip packages"
+
+for pip_package in $pip_package_list
+do
+    if pip list 2> /dev/null | awk '{print $1}' | grep -x "$pip_package" &> /dev/null
+    then
+        printf "\t\t%s\n" "✓✓ $pip_package"
+    else
+        pip install "$pip_package"
+    fi
+done
+#}}}
+
+################################################################################
+
+#{{{
+echo "Installing pip3 packages"
+
+for pip3_package in $pip3_package_list
+do
+    if pip3 list 2> /dev/null | awk '{print $1}' | grep -x "$pip3_package" &> /dev/null
+    then
+        printf "\t\t%s\n" "✓✓ $pip3_package"
+    else
+        sudo -H pip3 install "$pip3_package"
+    fi
+done
+#}}}
+
+################################################################################
+
+#{{{
+echo "Installing npm packages"
+
+for npm_package in $npm_package_list
+do
+    if npm list -g --depth 0 | awk 'NR>=2 {print $2}' | awk -F "@" '{print $1}' | grep -x "$npm_package" &> /dev/null
+    then
+        printf "\t\t%s\n" "✓✓ $npm_package"
+    else
+        sudo npm install -g "$npm_package"
+    fi
+done
+#}}}
+
+################################################################################
     # npm \
 ################################################################################

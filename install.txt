@@ -10,13 +10,7 @@ install sonarr
 sudo apt-get remove iio-sensor-proxy
 gsettings set org.gnome.settings-daemon.plugins.orientation active false
 
-sudo -H pip3 install asciinema
-sudo -H pip3 install pywal
-sudo -H pip3 install mps-youtube
-sudo -H pip3 install youtube-dl
-
-sudo npm install webtorrent-cli -g
-sudo npm install -g tldr
+https://github.com/alexanderjeurissen/ranger_devicons
 
 https://github.com/karlstav/cava
 install all dependencies before building
@@ -36,26 +30,24 @@ for config
 https://github.com/Airblader/i3
 
 upgrade all pip packages
+upgrade all npm packages
 
 https://github.com/jaagr/polybar/wiki/Compiling
 
-toilet -t -w 120 -f pagga abcdefghijklmnopqrstuvwxyz | lolcat
+toilet -t -w 120 -f pagga <string> | lolcat
+figlet -ckf slant <string>
 
 https://github.com/pipeseroni/pipes.sh
 
-scool-retro-term install dependencies from github
+cool-retro-term install dependencies from github
 
 # Download xdman, extract and install
 http://xdman.sourceforge.net/#downloads
 
 sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
 
-sudo apt-get install chrome-gnome-shell
 install gsconnect from gnome-extensions
 install plugin for chrome also
 
 download nerdfonts to ~/.fonts directory and run
 fc-cache -fv
-
-pip install ranger-fm
-https://github.com/alexanderjeurissen/ranger_devicons
