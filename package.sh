@@ -1,5 +1,16 @@
 #!/bin/bash
 
+################################################################################
+#                                                       __                     #
+#       ____   ___  _      __       _____ __  __ _____ / /_ ___   ____ ___     #
+#      / __ \ / _ \| | /| / /      / ___// / / // ___// __// _ \ / __ `__ \    #
+#     / / / //  __/| |/ |/ /      (__  )/ /_/ /(__  )/ /_ /  __// / / / / /    #
+#    /_/ /_/ \___/ |__/|__/______/____/ \__, //____/ \__/ \___//_/ /_/ /_/     #
+#                         /_____/      /____/                                  #
+#                                                                              #
+################################################################################
+
+#{{{ APT PACKAGE LIST
 apt_package_list="               \
     texlive-latex-extra          \
     texlive-extra-utils          \
@@ -42,11 +53,11 @@ apt_package_list="               \
     tree                         \
     git                          \
     kompare kdiff3               \
-    ranger vifm                  \
     mpv smplayer                 \
     curl                         \
     chromium-browser qutebrowser \
     zathura                      \
+    mupdf mupdf-tools            \
     qbittorrent                  \
     shutter                      \
     htop                         \
@@ -68,7 +79,7 @@ apt_package_list="               \
     vlc                          \
     vim                          \
     vim-gtk3                     \
-    mupdf mupdf-tools            \
+    ranger vifm                  \
     highlight                    \
     atool                        \
     libarchive-tools             \
@@ -78,21 +89,27 @@ apt_package_list="               \
     odt2txt                      \
     openjdk-11-jre               \
     "
+#}}}
 
+#{{{ SNAP CLASSIC PACKAGE LIST
 snap_classic_package_list=" \
     code                    \
     sublime-text            \
     atom                    \
     cool-retro-term         \
     "
+#}}}
 
+#{{{ SNAP STRICT PACKAGE LIST
 snap_strict_package_list=" \
     gitkraken              \
     gotop-cjbassi          \
     "
+#}}}
 
-#############################################################
+################################################################################
 
+#{{{
 echo "Switching to home directory"
 cd || exit
 
@@ -106,9 +123,11 @@ echo "Cleaning system"
 sudo apt-get autoremove -y > /dev/null
 sudo apt-get autoclean -y > /dev/null
 sudo apt-get clean -y > /dev/null
+#}}}
 
-#############################################################
+################################################################################
 
+#{{{
 echo "Installing packages from Ubuntu Repositories"
 
 for apt_package in $apt_package_list
@@ -126,9 +145,11 @@ sudo apt-get install fonts-powerline -y > /dev/null
 
 echo "Setting dash to dock click action to minimize"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+#}}}
 
-#############################################################
+################################################################################
 
+#{{{
 echo "Updating snap packages"
 sudo snap refresh
 
@@ -153,6 +174,7 @@ do
         sudo snap install "$snap_strict_package"
     fi
 done
-    # npm \
+#}}}
 
-#############################################################
+    # npm \
+################################################################################
