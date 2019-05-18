@@ -10,11 +10,11 @@ mkdir -p ~/.vim/mysnippets/
 
 echo "Switching to Home directory"
 
-cd
+cd || exit
 
 if [ -d "$HOME/dotfiles" ];
 then
-    cd dotfiles
+    cd dotfiles || exit
     # Check return value to see if there are incoming updates.
     if ! git diff --quiet remotes/origin/HEAD;
     then
@@ -44,7 +44,7 @@ then
     else
         echo "Local repository already up to date with the remote repository"
     fi
-    cd
+    cd || exit
 else
     echo "No old dotfiles directory exists, so"
     echo "cloning dotfiles repository from github"

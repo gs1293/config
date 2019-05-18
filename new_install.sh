@@ -1,7 +1,9 @@
 #!/bin/bash
 
+#############################################################
+
 echo "Switching to home directory"
-cd
+cd || exit
 
 echo "Updating system"
 sudo apt-get update -y > /dev/null
@@ -12,6 +14,8 @@ sudo apt-get upgrade -y > /dev/null
 echo "Cleaning system"
 sudo apt-get autoremove -y > /dev/null
 sudo apt-get autoclean -y > /dev/null
+
+#############################################################
 
 echo "Installing packages from Ubuntu Repositories"
 
@@ -322,6 +326,8 @@ else
     echo "snapd is already installed"
 fi
 
+#############################################################
+
 echo "Installing packages from the snap store"
 
 echo "Updating snap packages"
@@ -369,3 +375,5 @@ then
 else
     echo "gotop-cjbassi is already installed"
 fi
+
+#############################################################

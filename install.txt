@@ -44,6 +44,7 @@ sudo apt-get install lxappearance
 sudo apt-get install lynx
 sudo apt-get install surfraw
 sudo apt-get install rxvt-unicode
+sudo apt-get install xsel
 sudo apt-get install playerctl
 
 sudo apt-get remove iio-sensor-proxy
@@ -91,3 +92,21 @@ http://xdman.sourceforge.net/#downloads
 sudo apt-get install openjdk-11-jre
 
 sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
+
+sudo apt-get install chrome-gnome-shell
+install gsconnect from gnome-extensions
+install plugin for chrome also
+
+download nerdfonts to ~/.fonts directory and run
+fc-cache -fv
+
+pip install ranger-fm
+https://github.com/alexanderjeurissen/ranger_devicons
+sudo apt-get install mupdf mupdf-tools
+sudo apt-get install highlight
+sudo apt-get install atool
+sudo apt-get install libarchive-tools
+sudo apt-get install elinks
+sudo apt-get install transmission-cli
+sudo apt-get install libimage-exiftool-perl
+sudo apt-get install odt2txt

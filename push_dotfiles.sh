@@ -2,7 +2,7 @@
 
 echo "Switching to HOME directory"
 
-cd
+cd || exit
 
 mkdir -p ~/dotfiles
 mkdir -p ~/dotfiles/.config/ranger
@@ -37,9 +37,9 @@ cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
 
 echo "Entering dotfiles directory"
-cd ~/dotfiles
+cd ~/dotfiles || exit
 
-if [[ `git status --porcelain` ]];
+if [[ $(git status --porcelain) ]];
 then
     echo "New changes are present"
     echo "Staging all changes"
