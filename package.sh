@@ -1,84 +1,94 @@
 #!/bin/bash
 
-apt_package_list=" \
-    texlive-latex-extra \
-    texlive-extra-utils \
-    openssh-client \
-    openssh-server \
-    net-tools \
-    python3-pip \
-    cmatrix \
-    w3m \
-    w3m-img \
-    ffmpegthumbnailer \
-    gnome-tweak-tool \
-    screen \
-    ncdu \
-    shellcheck \
-    blueman \
-    i3blocks \
-    compton \
-    mplayer \
-    xbacklight \
-    pavucontrol \
-    i3lock-fancy \
-    verilator \
-    iverilog \
-    lolcat \
-    figlet \
-    toilet \
-    tty-clock \
-    meld \
-    thunar \
-    konsole \
-    mps-youtube \
-    cowsay \
-    lxappearance \
-    lynx \
-    surfraw \
-    rxvt-unicode \
-    xsel \
-    playerctl
-    tree \
-    git \
-    kompare kdiff3 \
-    ranger vifm \
-    mpv smplayer \
-    curl \
-    chromium-browser qutebrowser\
-    zathura \
-    qbittorrent \
-    shutter \
-    htop \
-    xterm \
-    feh \
-    wallch \
-    zsh \
-    rofi \
-    cmus \
-    tmux \
-    gimp \
-    neofetch \
-    xattr \
-    i3 \
-    snapd \
-    uget \
-    aria2 \
-    python-pip \
-    vlc \
-    vim \
-    vim-gtk3 \
+apt_package_list="               \
+    texlive-latex-extra          \
+    texlive-extra-utils          \
+    openssh-client               \
+    openssh-server               \
+    net-tools                    \
+    python3-pip                  \
+    cmatrix                      \
+    w3m                          \
+    w3m-img                      \
+    ffmpegthumbnailer            \
+    gnome-tweak-tool             \
+    screen                       \
+    ncdu                         \
+    shellcheck                   \
+    blueman                      \
+    i3blocks                     \
+    compton                      \
+    mplayer                      \
+    xbacklight                   \
+    pavucontrol                  \
+    i3lock-fancy                 \
+    verilator                    \
+    iverilog                     \
+    lolcat                       \
+    figlet                       \
+    toilet                       \
+    tty-clock                    \
+    meld                         \
+    thunar                       \
+    konsole                      \
+    mps-youtube                  \
+    cowsay                       \
+    lxappearance                 \
+    lynx                         \
+    surfraw                      \
+    rxvt-unicode                 \
+    xsel                         \
+    playerctl                    \
+    tree                         \
+    git                          \
+    kompare kdiff3               \
+    ranger vifm                  \
+    mpv smplayer                 \
+    curl                         \
+    chromium-browser qutebrowser \
+    zathura                      \
+    qbittorrent                  \
+    shutter                      \
+    htop                         \
+    xterm                        \
+    feh                          \
+    wallch                       \
+    zsh                          \
+    rofi                         \
+    cmus                         \
+    tmux                         \
+    gimp                         \
+    neofetch                     \
+    xattr                        \
+    i3                           \
+    snapd                        \
+    uget                         \
+    aria2                        \
+    python-pip                   \
+    vlc                          \
+    vim                          \
+    vim-gtk3                     \
+    mupdf mupdf-tools            \
+    highlight                    \
+    atool                        \
+    libarchive-tools             \
+    elinks                       \
+    transmission-cli             \
+    libimage-exiftool-perl       \
+    odt2txt                      \
+    openjdk-11-jre               \
     "
 
 snap_classic_package_list=" \
-    code \
-    sublime-text \
-    atom \
+    code                    \
+    sublime-text            \
+    atom                    \
+    cool-retro-term         \
     "
 
 snap_strict_package_list=" \
-    gitkraken \
-    gotop-cjbassi \
+    gitkraken              \
+    gotop-cjbassi          \
     "
 
 #############################################################

@@ -43,13 +43,10 @@ toilet -t -w 120 -f pagga abcdefghijklmnopqrstuvwxyz | lolcat
 
 https://github.com/pipeseroni/pipes.sh
 
-sudo snap install cool-retro-term --classic
-install dependencies from github
+scool-retro-term install dependencies from github
 
 # Download xdman, extract and install
 http://xdman.sourceforge.net/#downloads
-# install java
-sudo apt-get install openjdk-11-jre
 
 sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
 
@@ -62,11 +59,3 @@ fc-cache -fv
 
 pip install ranger-fm
 https://github.com/alexanderjeurissen/ranger_devicons
-sudo apt-get install mupdf mupdf-tools
-sudo apt-get install highlight
-sudo apt-get install atool
-sudo apt-get install libarchive-tools
-sudo apt-get install elinks
-sudo apt-get install transmission-cli
-sudo apt-get install libimage-exiftool-perl
-sudo apt-get install odt2txt
