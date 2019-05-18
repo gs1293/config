@@ -44,22 +44,6 @@ else
     echo "Vundle.vim is already installed"
 fi
 
-if [ ! -x "$(command -v tree)" ];
-then
-    echo "Installing tree"
-    sudo apt-get install tree -y
-else
-    echo "tree is already installed"
-fi
-
-if [ ! -x "$(command -v git)" ];
-then
-    echo "Installing Git Version Control"
-    sudo apt-get install git -y
-else
-    echo "Git is already installed"
-fi
-
 if [ ! -x "$(command -v wallch)" ];
 then
     echo "Installing wallch"
@@ -74,14 +58,6 @@ then
     sudo apt-get install python-pip -y
 else
     echo "python-pip is already installed"
-fi
-
-if [ ! -x "$(command -v kompare)" ];
-then
-    echo "Installing kompare"
-    sudo apt-get install kompare -y
-else
-    echo "kompare is already installed"
 fi
 
 if [ ! -x "$(command -v kdiff3)" ];
