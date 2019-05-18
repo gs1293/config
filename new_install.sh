@@ -18,14 +18,6 @@ else
     echo "oh-my-zsh is already installed"
 fi
 
-if [ ! -x "$(command -v youtube-dl)" ];
-then
-    echo "Installing youtube-dl"
-    sudo -H pip install --upgrade youtube-dl
-else
-    echo "youtube-dl is already installed"
-fi
-
 if [ ! -x "$(command -v grub-customizer)" ];
 then
     echo "Installing grub-customizer"

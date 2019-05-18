@@ -34,9 +34,6 @@ upgrade all npm packages
 
 https://github.com/jaagr/polybar/wiki/Compiling
 
-toilet -t -w 120 -f pagga <string> | lolcat
-figlet -ckf slant <string>
-
 https://github.com/pipeseroni/pipes.sh
 
 cool-retro-term install dependencies from github
