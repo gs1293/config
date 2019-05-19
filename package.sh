@@ -94,6 +94,7 @@ apt_package_list="               \
     python-gtk2                  \
     python-setuptools            \
     python-distutils-extra       \
+    slop                         \
     "
 #}}}
 
@@ -302,5 +303,21 @@ else
     rm vivid*.deb
 fi
 #}}}
+
+echo "Installing screenkey"
+
+cd || exit
+mkdir -p ~/Programs
+cd ~/Programs || exit
+
+if which screenkey &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ screenkey"
+else
+    git clone https://gitlab.com/wavexx/screenkey
+    cd screenkey || exit
+    sudo ./setup.py install
+fi
+cd || exit
 
 ################################################################################
