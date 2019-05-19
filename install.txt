@@ -14,7 +14,6 @@ https://github.com/karlstav/cava
 install all dependencies before building
 
 https://github.com/dpayne/cli-visualizer
-https://github.com/pipeseroni/pipes.sh
 
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
