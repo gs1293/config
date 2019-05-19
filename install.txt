@@ -17,8 +17,8 @@ install all dependencies before building
 
 https://github.com/dpayne/cli-visualizer
 https://github.com/sharkdp/bat
-
 https://gitlab.com/wavexx/screenkey
+https://github.com/pipeseroni/pipes.sh
 
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
@@ -34,8 +34,6 @@ upgrade all npm packages
 
 https://github.com/jaagr/polybar/wiki/Compiling
 
-https://github.com/pipeseroni/pipes.sh
-
 cool-retro-term install dependencies from github
 
 # Download xdman, extract and install
@@ -48,3 +46,6 @@ install plugin for chrome also
 
 download nerdfonts to ~/.fonts directory and run
 fc-cache -fv
+
+fzf hidden files search
+and exact matches
