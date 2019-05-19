@@ -107,6 +107,7 @@ snap_classic_package_list=" \
 snap_strict_package_list=" \
     gitkraken              \
     gotop-cjbassi          \
+    jq                     \
     "
 #}}}
 
@@ -250,3 +251,44 @@ done
 #}}}
 
 ################################################################################
+
+#{{{
+echo "Installing Google Chrome Browser"
+
+if dpkg -s google-chrome-stable &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ google-chrome-stable"
+else
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+    rm google-chrome-stable_current_amd64.deb
+fi
+
+echo "Installing Brave Browser"
+
+if dpkg -s brave-browser &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ brave-browser"
+else
+    curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+    source /etc/os-release
+    echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
+    sudo apt update
+    sudo apt install brave-keyring brave-browser
+fi
+
+echo "Installing Bat - cat clone"
+
+if dpkg -s bat &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ bat"
+else
+    curl -s https://api.github.com/repos/sharkdp/bat/releases/latest | jq -r ".assets[] | .browser_download_url" | grep amd64 | grep -v musl | xargs wget -q
+    sudo dpkg -i bat*.deb
+    rm bat*.deb
+fi
+#}}}
+
+################################################################################
+
+

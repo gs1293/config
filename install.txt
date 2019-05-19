@@ -1,10 +1,8 @@
 chsh -s /bin/zsh
 logout and login back
 
-install google-chrome-stable from website or software repo
 install persepolis from website
 install gpg from website
-install brave using instructions on website
 install sonarr
 
 sudo apt-get remove iio-sensor-proxy
@@ -16,7 +14,6 @@ https://github.com/karlstav/cava
 install all dependencies before building
 
 https://github.com/dpayne/cli-visualizer
-https://github.com/sharkdp/bat
 https://gitlab.com/wavexx/screenkey
 https://github.com/pipeseroni/pipes.sh
 
