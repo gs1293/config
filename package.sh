@@ -304,12 +304,11 @@ else
 fi
 #}}}
 
-echo "Installing screenkey"
-
 cd || exit
 mkdir -p ~/Programs
-cd ~/Programs || exit
 
+cd ~/Programs || exit
+echo "Installing screenkey"
 if which screenkey &> /dev/null
 then
     printf "\t\t%s\n" "✓✓ screenkey"
@@ -317,6 +316,17 @@ else
     git clone https://gitlab.com/wavexx/screenkey
     cd screenkey || exit
     sudo ./setup.py install
+fi
+
+cd ~/Programs || exit
+echo "Installing pipes.sh"
+if which pipes.sh &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ pipes.sh"
+else
+    git clone https://github.com/pipeseroni/pipes.sh
+    cd pipes.sh || exit
+    make install
 fi
 cd || exit
 
