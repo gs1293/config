@@ -91,6 +91,9 @@ apt_package_list="               \
     chrome-gnome-shell           \
     nodejs                       \
     npm                          \
+    python-gtk2                  \
+    python-setuptools            \
+    python-distutils-extra       \
     "
 #}}}
 
@@ -277,7 +280,7 @@ else
     sudo apt install brave-keyring brave-browser
 fi
 
-echo "Installing Bat - cat clone"
+echo "Installing Bat - a cat clone"
 
 if dpkg -s bat &> /dev/null
 then
@@ -287,8 +290,17 @@ else
     sudo dpkg -i bat*.deb
     rm bat*.deb
 fi
+
+echo "Installing vivid"
+
+if dpkg -s vivid &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ vivid"
+else
+    curl -s https://api.github.com/repos/sharkdp/vivid/releases/latest | jq -r ".assets[] | .browser_download_url" | grep amd64 | grep -v musl | xargs wget -q
+    sudo dpkg -i vivid*.deb
+    rm vivid*.deb
+fi
 #}}}
 
 ################################################################################
-
-
