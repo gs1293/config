@@ -35,7 +35,6 @@ apt_package_list="               \
     i3lock-fancy                 \
     verilator                    \
     iverilog                     \
-    lolcat                       \
     figlet                       \
     toilet                       \
     tty-clock                    \
@@ -257,7 +256,7 @@ done
 ################################################################################
 
 #{{{
-echo "Installing Google Chrome Browser"
+echo "Installing Other Programs"
 
 if dpkg -s google-chrome-stable &> /dev/null
 then
@@ -267,8 +266,6 @@ else
     sudo dpkg -i google-chrome-stable_current_amd64.deb
     rm google-chrome-stable_current_amd64.deb
 fi
-
-echo "Installing Brave Browser"
 
 if dpkg -s brave-browser &> /dev/null
 then
@@ -281,8 +278,6 @@ else
     sudo apt install brave-keyring brave-browser
 fi
 
-echo "Installing Bat - a cat clone"
-
 if dpkg -s bat &> /dev/null
 then
     printf "\t\t%s\n" "✓✓ bat"
@@ -292,8 +287,6 @@ else
     rm bat*.deb
 fi
 
-echo "Installing vivid"
-
 if dpkg -s vivid &> /dev/null
 then
     printf "\t\t%s\n" "✓✓ vivid"
@@ -302,7 +295,6 @@ else
     sudo dpkg -i vivid*.deb
     rm vivid*.deb
 fi
-#}}}
 
 cd || exit
 mkdir -p ~/Programs
@@ -330,4 +322,13 @@ else
 fi
 cd || exit
 
+if which lolcat &> /dev/null
+then
+    printf "\t\t%s\n" "✓✓ lolcat"
+else
+    sudo gem install lolcat
+fi
+#}}}
+
 ################################################################################
+
