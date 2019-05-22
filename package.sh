@@ -94,6 +94,8 @@ apt_package_list="               \
     python-setuptools            \
     python-distutils-extra       \
     slop                         \
+    imagemagick                  \
+    procps                       \
     "
 #}}}
 
