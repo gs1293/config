@@ -7,6 +7,7 @@ mkdir -p ~/.config/polybar/
 mkdir -p ~/.config/youtube-dl/
 mkdir -p ~/.vim/myfunctions/
 mkdir -p ~/.vim/mysnippets/
+mkdir -p ~/.urxvt/ext/
 
 echo "Switching to Home directory"
 
@@ -33,6 +34,7 @@ then
             cp ~/dotfiles/.zshrc ~/.
             cp ~/dotfiles/.gitconfig ~/.
             cp ~/dotfiles/.bash_aliases ~/.
+            cp ~/dotfiles/.Xresources ~/.
             cp ~/dotfiles/.config/ranger/* ~/.config/ranger/.
             cp ~/dotfiles/.config/i3/* ~/.config/i3/.
             cp ~/dotfiles/.config/i3blocks/* ~/.config/i3blocks/.
@@ -40,6 +42,7 @@ then
             cp ~/dotfiles/.config/youtube-dl/* ~/.config/youtube-dl/.
             cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
             cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
+            cp ~/dotfiles/.urxvt/ext/* ~/.urxvt/ext/.
         fi
     else
         echo "Local repository already up to date with the remote repository"

@@ -12,6 +12,7 @@ mkdir -p ~/dotfiles/.config/polybar
 mkdir -p ~/dotfiles/.config/youtube-dl
 mkdir -p ~/dotfiles/.vim/myfunctions
 mkdir -p ~/dotfiles/.vim/mysnippets
+mkdir -p ~/dotfiles/.urxvt/ext
 
 echo "Copying dotfiles to local repo"
 cp ~/.vimrc ~/dotfiles/.
@@ -19,6 +20,7 @@ cp ~/.inputrc ~/dotfiles/.
 cp ~/.zshrc ~/dotfiles/.
 cp ~/.gitconfig ~/dotfiles/.
 cp ~/.bash_aliases ~/dotfiles/.
+cp ~/.Xresources ~/dotfiles/.
 cp ~/.config/ranger/rc.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/commands.py ~/dotfiles/.config/ranger/.
@@ -35,6 +37,7 @@ cp ~/.config/polybar/launch.sh ~/dotfiles/.config/polybar/.
 cp ~/.config/youtube-dl/config ~/dotfiles/.config/youtube-dl/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
+cp ~/.urxvt/ext/* ~/dotfiles/.urxvt/ext/.
 
 echo "Entering dotfiles directory"
 cd ~/dotfiles || exit
