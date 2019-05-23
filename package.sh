@@ -243,6 +243,9 @@ done
 ################################################################################
 
 #{{{
+echo "Updating npm packages"
+npm update
+
 echo "Installing npm packages"
 
 for npm_package in $npm_package_list
