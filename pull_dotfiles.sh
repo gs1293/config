@@ -5,6 +5,7 @@ mkdir -p ~/.config/i3/
 mkdir -p ~/.config/i3blocks/
 mkdir -p ~/.config/polybar/
 mkdir -p ~/.config/youtube-dl/
+mkdir -p ~/.config/gtk-3.0/
 mkdir -p ~/.vim/myfunctions/
 mkdir -p ~/.vim/mysnippets/
 mkdir -p ~/.urxvt/ext/
@@ -40,6 +41,7 @@ then
             cp ~/dotfiles/.config/i3blocks/* ~/.config/i3blocks/.
             cp ~/dotfiles/.config/polybar/* ~/.config/polybar/.
             cp ~/dotfiles/.config/youtube-dl/* ~/.config/youtube-dl/.
+            cp ~/dotfiles/.config/gtk-3.0/* ~/.config/gtk-3.0/.
             cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
             cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
             cp ~/dotfiles/.urxvt/ext/* ~/.urxvt/ext/.
