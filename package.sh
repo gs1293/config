@@ -168,7 +168,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $apt_package"
     else
-        sudo apt-get install "$apt_package" -y
+        printf "\t\t%s\n" "Installing $apt_package"
+        sudo apt-get install "$apt_package" -y > /dev/null
     fi
 done
 
@@ -193,7 +194,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $snap_classic_package"
     else
-        sudo snap install "$snap_classic_package" --classic
+        printf "\t\t%s\n" "Installing $snap_classic_package"
+        sudo snap install "$snap_classic_package" --classic > /dev/null
     fi
 done
 
@@ -203,7 +205,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $snap_strict_package"
     else
-        sudo snap install "$snap_strict_package"
+        printf "\t\t%s\n" "Installing $snap_strict_package"
+        sudo snap install "$snap_strict_package" > /dev/null
     fi
 done
 #}}}
@@ -219,7 +222,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $pip_package"
     else
-        pip install "$pip_package"
+        printf "\t\t%s\n" "Installing $pip_package"
+        sudo -H pip install "$pip_package" > /dev/null
     fi
 done
 #}}}
@@ -235,7 +239,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $pip3_package"
     else
-        sudo -H pip3 install "$pip3_package"
+        printf "\t\t%s\n" "Installing $pip3_package"
+        sudo -H pip3 install "$pip3_package" > /dev/null
     fi
 done
 #}}}
@@ -254,7 +259,8 @@ do
     then
         printf "\t\t%s\n" "✓✓ $npm_package"
     else
-        sudo npm install -g "$npm_package"
+        printf "\t\t%s\n" "Installing $npm_package"
+        sudo npm install -g "$npm_package" > /dev/null
     fi
 done
 #}}}
@@ -334,6 +340,14 @@ then
 else
     sudo gem install lolcat
 fi
+
+if dpkg -s iio-sensor-proxy &> /dev/null
+then
+    sudo apt-get remove iio-sensor-proxy > /dev/null
+    printf "\t\t%s\n" "✗✗ iio-sensor-proxy"
+    gsettings set org.gnome.settings-daemon.plugins.orientation active false
+fi
+
 #}}}
 
 ################################################################################
