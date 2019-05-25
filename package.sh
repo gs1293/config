@@ -18,7 +18,13 @@ apt_package_list="               \
     openssh-client               \
     openssh-server               \
     net-tools                    \
+    python-pip                   \
     python3-pip                  \
+    python-dev                   \
+    python3-dev                  \
+    python-gtk2                  \
+    python-setuptools            \
+    python-distutils-extra       \
     cmatrix                      \
     w3m                          \
     w3m-img                      \
@@ -75,11 +81,10 @@ apt_package_list="               \
     snapd                        \
     uget                         \
     aria2                        \
-    python-pip                   \
     vlc                          \
     vim                          \
     vim-gtk3                     \
-    ranger vifm                  \
+    vifm                         \
     highlight                    \
     atool                        \
     libarchive-tools             \
@@ -91,12 +96,12 @@ apt_package_list="               \
     chrome-gnome-shell           \
     nodejs                       \
     npm                          \
-    python-gtk2                  \
-    python-setuptools            \
-    python-distutils-extra       \
     slop                         \
     imagemagick                  \
     procps                       \
+    libjpeg8-dev                 \
+    zlib1g-dev                   \
+    libxtst-dev                  \
     "
 #}}}
 
@@ -129,6 +134,7 @@ pip3_package_list=" \
     pywal           \
     mps-youtube     \
     youtube-dl      \
+    ueberzug        \
     "
 #}}}
 
