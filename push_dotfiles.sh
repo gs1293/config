@@ -20,6 +20,7 @@ cp ~/.inputrc ~/dotfiles/.
 cp ~/.zshrc ~/dotfiles/.
 cp ~/.gitconfig ~/dotfiles/.
 cp ~/.bash_aliases ~/dotfiles/.
+cp ~/.tmux.conf ~/dotfiles/.
 cp ~/.Xresources ~/dotfiles/.
 cp ~/.config/ranger/rc.conf ~/dotfiles/.config/ranger/.
 cp ~/.config/ranger/rifle.conf ~/dotfiles/.config/ranger/.

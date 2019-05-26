@@ -34,6 +34,7 @@ then
             cp ~/dotfiles/.zshrc ~/.
             cp ~/dotfiles/.gitconfig ~/.
             cp ~/dotfiles/.bash_aliases ~/.
+            cp ~/dotfiles/.tmux.conf ~/.
             cp ~/dotfiles/.Xresources ~/.
             cp ~/dotfiles/.config/ranger/* ~/.config/ranger/.
             cp ~/dotfiles/.config/i3/* ~/.config/i3/.
