@@ -8,7 +8,6 @@ mkdir -p ~/.config/youtube-dl/
 mkdir -p ~/.config/gtk-3.0/
 mkdir -p ~/.vim/myfunctions/
 mkdir -p ~/.vim/mysnippets/
-mkdir -p ~/.urxvt/ext/
 
 echo "Switching to Home directory"
 
@@ -44,7 +43,6 @@ then
             cp ~/dotfiles/.config/gtk-3.0/* ~/.config/gtk-3.0/.
             cp ~/dotfiles/.vim/myfunctions/* ~/.vim/myfunctions/.
             cp ~/dotfiles/.vim/mysnippets/* ~/.vim/mysnippets/.
-            cp ~/dotfiles/.urxvt/ext/* ~/.urxvt/ext/.
         fi
     else
         echo "Local repository already up to date with the remote repository"

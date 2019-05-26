@@ -13,7 +13,6 @@ mkdir -p ~/dotfiles/.config/youtube-dl
 mkdir -p ~/dotfiles/.config/gtk-3.0
 mkdir -p ~/dotfiles/.vim/myfunctions
 mkdir -p ~/dotfiles/.vim/mysnippets
-mkdir -p ~/dotfiles/.urxvt/ext
 
 echo "Copying dotfiles to local repo"
 cp ~/.vimrc ~/dotfiles/.
@@ -40,7 +39,6 @@ cp ~/.config/youtube-dl/config ~/dotfiles/.config/youtube-dl/.
 cp ~/.config/gtk-3.0/gtk.css ~/dotfiles/.config/gtk-3.0/.
 cp ~/.vim/myfunctions/* ~/dotfiles/.vim/myfunctions/.
 cp ~/.vim/mysnippets/* ~/dotfiles/.vim/mysnippets/.
-cp ~/.urxvt/ext/* ~/dotfiles/.urxvt/ext/.
 
 echo "Entering dotfiles directory"
 cd ~/dotfiles || exit
