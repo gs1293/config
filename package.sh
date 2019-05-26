@@ -102,21 +102,18 @@ apt_package_list="               \
     libjpeg8-dev                 \
     zlib1g-dev                   \
     libxtst-dev                  \
+    preload                      \
     "
 #}}}
 
 #{{{ SNAP CLASSIC PACKAGE LIST
 snap_classic_package_list=" \
     code                    \
-    sublime-text            \
-    atom                    \
-    cool-retro-term         \
     "
 #}}}
 
 #{{{ SNAP STRICT PACKAGE LIST
 snap_strict_package_list=" \
-    gitkraken              \
     gotop-cjbassi          \
     jq                     \
     "
