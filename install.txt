@@ -41,3 +41,21 @@ fc-cache -fv
 
 fzf hidden files search
 and exact matches
+
+hostnamectl set-hostname --static "name"
+sudo -i
+
+waterfox
+octave
+zettlr
+compiz
+
+ack-grep
+fasd
+fd-musl
+flatpak
+ipython
+ripgrep
+
+WaveDromEditor
+
