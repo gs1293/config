@@ -1,0 +1,28 @@
+"replace the word under cursor
+nnoremap <leader>* :%s/<c-r><c-w>//<left>
+" nnoremap <leader>* :%s/\<<c-r><c-w>\>//<left>
+
+"move lines around
+nnoremap <leader>k :m-2<cr>==
+nnoremap <leader>j :m+<cr>==
+xnoremap <leader>k :m-2<cr>gv=gv
+xnoremap <leader>j :m'>+<cr>gv=gv
+
+"move to the split in the direction shown, or create a new split
+nnoremap <silent> <C-h> :call WinMove('h')<cr>
+nnoremap <silent> <C-j> :call WinMove('j')<cr>
+nnoremap <silent> <C-k> :call WinMove('k')<cr>
+nnoremap <silent> <C-l> :call WinMove('l')<cr>
+
+function! WinMove(key)
+  let t:curwin = winnr()
+  exec "wincmd ".a:key
+  if (t:curwin == winnr())
+    if (match(a:key,'[jk]'))
+      wincmd v
+    else
+      wincmd s
+    endif
+    exec "wincmd ".a:key
+  endif
+endfunction
