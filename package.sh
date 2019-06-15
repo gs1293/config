@@ -93,7 +93,6 @@ apt_package_list="                \
     libimage-exiftool-perl        \
     odt2txt                       \
     openjdk-11-jre                \
-    chrome-gnome-shell            \
     nodejs                        \
     npm                           \
     slop                          \

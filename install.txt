@@ -2,9 +2,6 @@ install persepolis from website
 install gpg from website
 install sonarr
 
-sudo apt-get remove iio-sensor-proxy
-gsettings set org.gnome.settings-daemon.plugins.orientation active false
-
 https://github.com/alexanderjeurissen/ranger_devicons
 
 https://github.com/dpayne/cli-visualizer
