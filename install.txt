@@ -33,34 +33,28 @@ http://xdman.sourceforge.net/#downloads
 
 sudo add-apt-repository ppa:gencfsm; sudo apt update; sudo apt install gnome-encfs-manager
 
-install gsconnect from gnome-extensions
-install plugin for chrome also
-
 download nerdfonts to ~/.fonts directory and run
 fc-cache -fv
 
+fzf install
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+cd ~/.fzf && git pull && ./install
 fzf hidden files search
 and exact matches
-
-hostnamectl set-hostname --static "name"
-sudo -i
-
-waterfox
-octave
-zettlr
-compiz
 
 ack-grep
 fasd
 fd-musl
-flatpak
 ipython
 ripgrep
 
-WaveDromEditor
-
 sudo snap set system refresh.retain=2
-
 snap list --all | awk '/disabled/{print $1, $3}' | while read snapname revision; do sudo snap remove "$snapname" --revision="$revision"; done
 
 https://github.com/xero/figlet-fonts
+
+flatpak
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
