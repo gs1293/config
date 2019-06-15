@@ -1,6 +1,3 @@
-chsh -s /bin/zsh
-logout and login back
-
 install persepolis from website
 install gpg from website
 install sonarr
@@ -10,10 +7,10 @@ gsettings set org.gnome.settings-daemon.plugins.orientation active false
 
 https://github.com/alexanderjeurissen/ranger_devicons
 
+https://github.com/dpayne/cli-visualizer
+
 https://github.com/karlstav/cava
 install all dependencies before building
-
-https://github.com/dpayne/cli-visualizer
 
 Installing uget-integrator with browser
 https://github.com/ugetdm/uget-integrator
@@ -25,8 +22,6 @@ for config
 https://github.com/Airblader/i3
 
 https://github.com/jaagr/polybar/wiki/Compiling
-
-cool-retro-term install dependencies from github
 
 # Download xdman, extract and install
 http://xdman.sourceforge.net/#downloads
