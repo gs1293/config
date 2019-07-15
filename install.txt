@@ -50,3 +50,11 @@ flatpak
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+sudo ubuntu-drivers autoinstall
+
+sudo apt install qt4-qtconfig qt5ct qt5-style-plugins
+
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
